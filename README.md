@@ -63,5 +63,3 @@ src/
 ├── types/         # Tipos TypeScript
 └── lib/           # Utilidades
 ```
-
-## 📸 Evidencias ....
