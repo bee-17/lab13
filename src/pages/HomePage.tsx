@@ -1,6 +1,4 @@
 import { Tv, ShoppingCart, Star, Ticket, Play, Info } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 
 const features = [
   { icon: Tv, title: 'Catálogo completo', desc: 'Las películas más populares y recientes siempre disponibles.' },
@@ -10,48 +8,42 @@ const features = [
 
 function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div style={{ minHeight: '100vh', background: '#0a0a0a' }}>
       {/* Hero */}
-      <section className="container mx-auto px-4 py-20 flex flex-col items-center text-center gap-6">
-        <div className="flex items-center gap-2 bg-secondary text-muted-foreground text-xs px-4 py-1.5 rounded-full border border-border">
+      <section style={{ maxWidth: 900, margin: '0 auto', padding: '80px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 24 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#1f1f1f', border: '1px solid #262626', color: '#a1a1a1', fontSize: 12, padding: '6px 16px', borderRadius: 99 }}>
           <Ticket size={12} />
           Tickets disponibles ahora
         </div>
 
-        <h1 className="text-6xl font-bold leading-tight max-w-2xl">
+        <h1 style={{ fontSize: 56, fontWeight: 700, lineHeight: 1.15, color: '#fafafa', maxWidth: 600, margin: 0 }}>
           La mejor experiencia de cine,{' '}
-          <span className="text-primary">en un clic</span>
+          <span style={{ color: '#facc15' }}>en un clic</span>
         </h1>
 
-        <p className="text-muted-foreground text-lg max-w-md leading-relaxed">
-          Compra tus tickets para las películas más esperadas del momento.
-          Rápido, fácil y sin filas.
+        <p style={{ color: '#a1a1a1', fontSize: 17, maxWidth: 400, lineHeight: 1.7, margin: 0 }}>
+          Compra tus tickets para las películas más esperadas del momento. Rápido, fácil y sin filas.
         </p>
 
-        <div className="flex gap-3 mt-2">
-          <Button size="lg" className="gap-2 bg-primary text-black hover:bg-primary/90 font-semibold px-8">
-            <Play size={16} fill="currentColor" />
-            Ver Cartelera
-          </Button>
-          <Button size="lg" variant="outline" className="gap-2 px-8">
-            <Info size={16} />
-            Saber más
-          </Button>
+        <div style={{ display: 'flex', gap: 12, marginTop: 8 }}>
+          <button style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#facc15', color: '#0a0a0a', border: 'none', borderRadius: 8, padding: '12px 28px', fontSize: 15, fontWeight: 600, cursor: 'pointer' }}>
+            <Play size={15} fill="#0a0a0a" /> Ver Cartelera
+          </button>
+          <button style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fafafa', border: '1px solid #404040', borderRadius: 8, padding: '12px 28px', fontSize: 15, cursor: 'pointer' }}>
+            <Info size={15} /> Saber más
+          </button>
         </div>
       </section>
 
       {/* Features */}
-      <section className="container mx-auto px-4 pb-20 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <section style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px 80px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
         {features.map(({ icon: Icon, title, desc }) => (
-          <div
-            key={title}
-            className="rounded-xl border border-border bg-card p-6 flex flex-col gap-3 hover:border-primary/50 transition-colors"
-          >
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-              <Icon size={20} className="text-primary" />
+          <div key={title} style={{ background: '#111', border: '1px solid #262626', borderRadius: 12, padding: 24, display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div style={{ width: 40, height: 40, borderRadius: 10, background: 'rgba(250,204,21,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Icon size={20} color="#facc15" />
             </div>
-            <p className="font-semibold text-foreground">{title}</p>
-            <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
+            <p style={{ fontWeight: 600, color: '#fafafa', margin: 0, fontSize: 15 }}>{title}</p>
+            <p style={{ color: '#a1a1a1', fontSize: 13, lineHeight: 1.6, margin: 0 }}>{desc}</p>
           </div>
         ))}
       </section>
