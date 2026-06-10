@@ -21,6 +21,8 @@ npm run dev
 
 ## 📸 Evidencias
 
+# 1. XIOMARA GARCIA SILVA
+
 ### 1. Creación del proyecto con Vite + React + TypeScript
 ![Creación del proyecto](docs/cap1.png)
 
@@ -32,6 +34,22 @@ npm run dev
 
 ### 4. Layout con Navbar usando shadcn/ui
 ![Layout](docs/cap4.png)
+
+
+# 2. Bellido Chambi Rony Widmer
+
+### 🔹 Creación del proyecto con Vite + React + TypeScript:
+![Imagen 1](docss/im1.png)
+
+### 🔹 Instalación y configuración de Tailwind CSS:
+![Imagen 1](docss/im2.png)
+
+### 🔹 Instalación de shadcn/ui y componentes:
+![Imagen 1](docss/im3.png)
+
+### 🔹 Layout con Navbar usando shadcn/ui:
+![Imagen 1](docss/im4.png)
+
 
 ## 📁 Estructura del Proyecto
 
