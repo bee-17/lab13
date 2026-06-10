@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-## 📸 Evidencias
+## 📸 Evidencias Garcia Silva 
 
 ### 1. Creación del proyecto con Vite + React + TypeScript
 ![Creación del proyecto](docs/cap1.png)
@@ -45,3 +45,5 @@ src/
 ├── types/         # Tipos TypeScript
 └── lib/           # Utilidades
 ```
+
+## 📸 Evidencias ....
